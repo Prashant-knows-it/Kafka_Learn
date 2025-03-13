@@ -13,4 +13,10 @@ public class KafkaTopicConfig {
         return TopicBuilder.name("spiderman")
                 .build();
     }
+
+    @Bean
+    public NewTopic marvelStudioJSON() {
+        return TopicBuilder.name("spiderman_json")
+                .build();
+    }
 }
